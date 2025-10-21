@@ -3,14 +3,14 @@
 int main() {
     // carta 1
     char est1, cod1[4], nome1[50];
-    unsigned long pop1;
+    int pop1;
     float area1, pib1;
     int pts1;
     float dens1, ppc1, poder1;
 
     // carta 2
     char est2, cod2[4], nome2[50];
-    unsigned long pop2;
+    int pop2;
     float area2, pib2;
     int pts2;
     float dens2, ppc2, poder2;
@@ -27,7 +27,7 @@ int main() {
     scanf(" %[^\n]", nome1);
 
     printf("populacao: ");
-    scanf("%lu", &pop1);
+    scanf("%d", &pop1);
 
     printf("area (km2): ");
     scanf("%f", &area1);
@@ -55,7 +55,7 @@ int main() {
     scanf(" %[^\n]", nome2);
 
     printf("populacao: ");
-    scanf("%lu", &pop2);
+    scanf("%d", &pop2);
 
     printf("area (km2): ");
     scanf("%f", &area2);
@@ -76,7 +76,7 @@ int main() {
     printf("estado: %c\n", est1);
     printf("codigo: %s\n", cod1);
     printf("cidade: %s\n", nome1);
-    printf("populacao: %lu\n", pop1);
+    printf("populacao: %d\n", pop1);
     printf("area: %.2f km2\n", area1);
     printf("pib: %.2f bi\n", pib1);
     printf("pontos turisticos: %d\n", pts1);
@@ -88,7 +88,7 @@ int main() {
     printf("estado: %c\n", est2);
     printf("codigo: %s\n", cod2);
     printf("cidade: %s\n", nome2);
-    printf("populacao: %lu\n", pop2);
+    printf("populacao: %d\n", pop2);
     printf("area: %.2f km2\n", area2);
     printf("pib: %.2f bi\n", pib2);
     printf("pontos turisticos: %d\n", pts2);
@@ -109,3 +109,4 @@ int main() {
 
     return 0;
 }
+
